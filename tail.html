@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    *{ font-family: 'Inter';}
+  </style>
+</head>
+<body class="bg-emerald-600">
+    <div class="w-[90%] h-[auto] m-[auto] mt-[40px] flex justify-center">
+        <div class="w-[30%] bg-[white] h-[450px] rounded-[5px] mr-[15px] px-[20px] py-[30px] ">
+            <h3 class="font-[700] text-center text-[20px]">Create an Account</h3>
+            <div class="w-[100%] mb-5 mt-5">
+              <label class="block text-grey-darker text-sm font-bold mb-2" for="first_name"><i class="fa fa-user" aria-hidden="true"></i> Name</label>
+              <input class="appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="first_name" type="text">
+            </div>
+
+            <div class="w-[100%] mb-5">
+              <label class="block text-grey-darker text-sm font-bold mb-2" for="first_name"> <i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
+              <input class="appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="first_name" type="email">
+            </div>
+
+            <div class="w-[100%] mb-5">
+              <label class="block text-grey-darker text-sm font-bold mb-2" for="first_name">Role</label>
+              <select class=" border rounded w-full py-2 px-3 text-grey-darker" id="first_name" >
+                <option value="Admin">Admin</option>
+                <option value="User">User</option>
+              </select>
+            </div>
+
+            <button type="submit" class="border-2 border-emerald-600 bg-emerald-600 text-white py-1 w-full rounded-md hover:bg-transparent hover:text-emerald-600 font-semibold">Login</button>
+          
+        </div>
+        <div class="w-[70%] bg-[white] h-[450px] rounded-[5px]  px-[20px] py-[30px]  ">
+          <h3 class="font-[700] text-[20px]">User List</h3>
+
+          <table class="w-full mt-[20px] mb-0 text-sm text-left text-gray-500 ">
+            <thead class="text-xs text-gray-700 ">
+                <tr>
+                    <th scope="col" class="px-6 py-3 text-center font-[800] text-[black] text-[15px]">ID</th>
+                    <th scope="col" class="px-6 py-3 text-center font-[800] text-[black] text-[15px]">Name</th>
+                    <th scope="col" class="px-6 py-3 text-center font-[800] text-[black] text-[15px]">Email</th>
+                    <th scope="col" class="px-6 py-3 text-center font-[800] text-[black] text-[15px]">Role</th>
+                    <th scope="col" class="px-6 py-3 text-center font-[800] text-[black] text-[15px]">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white ">
+                <th scope="row" class="border font-[400] text-[black] px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    1
+                </th>
+                <td class="px-6 py-4 border font-[400] text-[black]">Ronalyn Anne Padilia</td>
+                <td class="px-6 py-4 border font-[400] text-[black]">ronalyn.padilia@gmail.com</td>
+                <td class="px-6 py-4 border font-[400] text-[black]">Admin</td>
+                <td class="px-6 py-4 border font-[400] text-[black]">
+                  <i class="fa fa-pencil-square-o text-[#3b82f6] font-[600] text-[17px] mr-1" aria-hidden="true"></i> 
+                  <i class="fa fa-trash-o text-[red] font-[600] text-[17px]" aria-hidden="true"></i>
+                </td>
+            </tr>
+
+            <tr class="bg-white ">
+              <th scope="row" class="border font-[400] text-[black] px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                  2
+              </th>
+              <td class="px-6 py-4 border font-[400] text-[black]">Ronalyn Test</td>
+              <td class="px-6 py-4 border font-[400] text-[black]">ronalyn.test@gmail.com</td>
+              <td class="px-6 py-4 border font-[400] text-[black]">User</td>
+              <td class="px-6 py-4 border font-[400] text-[black]">
+                <i class="fa fa-pencil-square-o text-[#3b82f6] font-[600] text-[17px] mr-1" aria-hidden="true"></i> 
+                <i class="fa fa-trash-o text-[red] font-[600] text-[17px]" aria-hidden="true"></i>
+              </td>
+          </tr>
+              
+           
+            </tbody>
+        </table>
+
+
+        </div>
+    </div>
+</body>
+</html>
