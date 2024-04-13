@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    *{font-family: 'Inter';}
+  </style>
+</head>
+</head>
+<body class="bg-emerald-600">
+  <div class="w-[90%] h-[auto] m-[auto] mt-[40px] flex justify-center">
+    <div class="w-[30%] bg-[white] h-[450px] rounded-[5px] mr-[15px] px-[20px] py-[30px]">
+      <h3 class="font-[700] text-center text-[20px]">Create an Account</h3>
+      <form id="userForm">
+        <div class="w-[100%] mb-5 mt-5">
+          <label class="block text-grey-darker text-sm font-bold mb-2" for="user_name"><i class="fa fa-user" aria-hidden="true"></i> Name</label>
+          <input class="appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="user_name" type="text" required>
+        </div>
+        <div class="w-[100%] mb-5">
+          <label class="block text-grey-darker text-sm font-bold mb-2" for="user_email"><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
+          <input class="appearance-none border rounded w-full py-2 px-3 text-grey-darker" id="user_email" type="email" required>
+        </div>
+        <div class="w-[100%] mb-5">
+          <label class="block text-grey-darker text-sm font-bold mb-2" for="user_role">Role</label>
+          <select class="border rounded w-full py-2 px-3 text-grey-darker" id="user_role">
+            <option value="Admin">Admin</option>
+            <option value="User">User</option>
+          </select>
+        </div>
+        <button type="submit" class="border-2 border-emerald-600 bg-emerald-600 text-white py-1 w-full rounded-md hover:bg-transparent hover:text-emerald-600 font-semibold">Add User</button>
+      </form>
+    </div>
+    <div class="w-[70%] bg-[white] h-[450px] rounded-[5px] px-[20px] py-[30px]">
+      <h3 class="font-[700] text-[20px]">User List</h3>
+      <table class="w-full mt-[20px] mb-0 text-sm text-left text-gray-500" id="userList">
+        <thead class="text-xs text-gray-700">
+          <tr>
+            <th scope="col" class="px-6 py-3 text-center font-[800] text-[black] text-[15px]">ID</th>
+            <th scope="col" class="px-6 py-3 text-center font-[800] text-[black] text-[15px]">Name</th>
+            <th scope="col" class="px-6 py-3 text-center font-[800] text-[black] text-[15px]">Email</th>
+            <th scope="col" class="px-6 py-3 text-center font-[800] text-[black] text-[15px]">Role</th>
+            <th scope="col" class="px-6 py-3 text-center font-[800] text-[black] text-[15px]">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
